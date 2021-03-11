@@ -8,3 +8,72 @@ html {
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --text-white: #fff;
+  --podklad-dark-blue: #283e50;
+  --btn-green: #1fcca4;
+  --btn-green-dark: #1cbb96;
+  --btn-blue: #0197f6;
+  --btn-blue-dark: #0090e9;
+}
+
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  color: var(--text-white);
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 360px;
+  background-color: var(--podklad-dark-blue);
+  margin: 50px auto;
+}
+
+.obrazek {
+  width: 360px;
+}
+
+.text {
+  padding: 0 10px;
+}
+
+.text h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+/* tlačítka */
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: block;
+  color: var(--text-white);
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.btn--rules {
+  background-color: var(--btn-green);
+  border-bottom: 1px solid var(--podklad-dark-blue);
+}
+
+.btn--rules:hover {
+  background-color: var(--btn-green-dark);
+}
+
+.btn--play {
+  background-color: var(--btn-blue);
+}
+
+.btn--play:hover {
+  background-color: var(--btn-blue-dark);
+}
