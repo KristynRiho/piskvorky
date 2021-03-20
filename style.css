@@ -26,7 +26,6 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  height: 100vh;
 }
 
 .container {
@@ -45,7 +44,7 @@ body {
   padding: 0 10px;
 }
 
-.text h1 {
+.headings {
   font-family: 'Lobster', cursive;
   font-size: 44px;
   font-weight: 400;
@@ -79,4 +78,36 @@ body {
 
 .btn--play:hover {
   background-color: var(--btn-blue-dark);
+}
+
+/* ******* stránka pravdila.html *************** */
+
+/* seznam pravidel */
+.rules {
+  padding: 0 15%;
+  text-align: left;
+}
+
+.rules li {
+  margin-bottom: 10%;
+  padding-left: 10px;
+}
+
+.rules-symbol {
+  width: 1em;
+  height: 1em;
+  filter: contrast(0%) brightness(200%);
+}
+
+/* obrazky s instrukcemi */
+figure {
+  padding: 15px 30px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  font-style: italic;
 }
