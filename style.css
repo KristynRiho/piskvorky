@@ -41,19 +41,22 @@ body {
 }
 
 .text {
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 .headings {
   font-family: 'Lobster', cursive;
   font-size: 44px;
   font-weight: 400;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
+.container--rules .headings {
+  padding-top: 30px;
+}
 /* tlačítka */
 .buttons {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .btn {
@@ -96,12 +99,16 @@ body {
 .rules-symbol {
   width: 1em;
   height: 1em;
-  filter: contrast(0%) brightness(200%);
+  filter: invert(100%);
 }
 
 /* obrazky s instrukcemi */
+.flex-container {
+  padding: 25px;
+}
+
 figure {
-  padding: 15px 30px;
+  padding-top: 15px;
 }
 
 figure img {
@@ -114,15 +121,16 @@ figure figcaption {
 
 @media screen and (min-width: 750px) {
   .container--rules {
-    width: 655px;
+    width: 675px;
   }
 
   .flex-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   figure {
-    flex-basis: 50%;
+    width: calc((100% - 25px) / 2);
   }
 }
