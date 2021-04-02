@@ -134,3 +134,77 @@ figure figcaption {
     width: calc((100% - 25px) / 2);
   }
 }
+
+/* ******* stránka hra.html *************** */
+.container--play {
+  max-width: 80vmin;
+  margin: 25px auto;
+  height: 100vh;
+}
+
+.headings--play {
+  margin-bottom: 15px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__player p {
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.navigation__player-symbol {
+  width: 1.1em;
+  height: 1.1em;
+  filter: invert(100%);
+}
+
+.navigation__icons a {
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+}
+
+.navigation__icons--green {
+  background-color: var(--btn-green);
+  margin-right: 5px;
+}
+
+.navigation__icons--blue {
+  background-color: var(--btn-blue);
+}
+
+.navigation__icons--green:hover,
+.navigation__icons--green:focus {
+  background-color: var(--btn-green-dark);
+}
+
+.navigation__icons--blue:hover,
+.navigation__icons--blue:focus {
+  background-color: var(--btn-blue-dark);
+}
+
+/* ****** hrací plocha **** */
+.playing-area {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 75vmin;
+}
+
+.cell {
+  border: 1px solid var(--podklad-dark-blue);
+  flex: 0 0 calc(100% / 10);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.cell:hover,
+.cell:active {
+  opacity: 0.9;
+}
