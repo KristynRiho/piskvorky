@@ -194,7 +194,7 @@ figure figcaption {
   margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
-  height: 75vmin;
+  height: 80vmin;
 }
 
 .cell {
@@ -207,4 +207,38 @@ figure figcaption {
 .cell:hover,
 .cell:active {
   opacity: 0.9;
+}
+
+/* ****** nastylování symbolů na hracím poli - kolečka,křížky **** */
+.board__field--circle {
+  background-image: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+  opacity: 1;
+  animation-name: animi;
+  animation-duration: 0.15s;
+  animation-iteration-count: 1;
+  cursor: auto;
+}
+
+.board__field--cross {
+  background-image: url(images/cross.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+  opacity: 1;
+  animation-name: animi;
+  animation-duration: 0.15s;
+  animation-iteration-count: 1;
+  cursor: auto;
+}
+
+@keyframes animi {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 70%;
+  }
 }
